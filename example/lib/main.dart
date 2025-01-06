@@ -31,7 +31,8 @@ class _MyAppState extends State<MyApp> {
               ElevatedButton(
                 onPressed: () async {
                   await FlutterIosAirplay.url(
-                      url: 'https://themonstersapp.com/bunny.mp4');
+                      url:
+                          'webrtc://demnaylive.monster/demnaylive/11736146545276977442475101');
                 },
                 child: const Text('Video Url'),
               ),
