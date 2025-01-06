@@ -25,6 +25,8 @@ public class FlutterIosAirplayPlugin: NSObject, FlutterPlugin {
       let playerViewController = AVPlayerViewController()
       playerViewController.player = player
       playerViewController.allowsPictureInPicturePlayback = false
+      // player.preventsDisplaySleepDuringVideoPlayback = true
+      // playerViewController.delegate = self
       UIApplication.shared.keyWindow?.rootViewController?.present(
         playerViewController, animated: true
       ) {
@@ -46,6 +48,8 @@ public class FlutterIosAirplayPlugin: NSObject, FlutterPlugin {
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         playerViewController.allowsPictureInPicturePlayback = false
+        // player.preventsDisplaySleepDuringVideoPlayback = true
+        // playerViewController.delegate = self
         UIApplication.shared.keyWindow?.rootViewController?.present(
           playerViewController, animated: true
         ) {
